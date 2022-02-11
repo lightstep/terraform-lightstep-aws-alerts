@@ -15,7 +15,7 @@ resource "lightstep_metric_condition" "ec2_cpu_usage" {
   expression {
     evaluation_window   = "2m"
     evaluation_criteria = "on_average"
-    is_no_data          = true
+    is_multi            = true
     operand             = "above"
     thresholds {
       warning  = 80
@@ -26,7 +26,7 @@ resource "lightstep_metric_condition" "ec2_cpu_usage" {
   metric_query {
     metric              = "aws.ec2.cpu_utilization_max"
     query_name          = "a"
-    timeseries_operator = "delta"
+    timeseries_operator = "last"
     hidden              = false
     display             = "line"
 

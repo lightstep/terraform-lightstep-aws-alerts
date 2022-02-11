@@ -16,7 +16,8 @@ This is a Terraform module for deploying a pre-defined set of AWS-related alerts
 Each AWS resource has an associated module that will create Lightstep alerts. Currently, these resources are supported:
 
 * __EC2__ (module: [`ec2-alerts`](https://github.com/lightstep/terraform-lightstep-aws-alerts/tree/master/modules/ec2-alerts))
-
+* __RDS__ (module: [`rds-alerts`](https://github.com/lightstep/terraform-lightstep-aws-alerts/tree/master/modules/rds-alerts))
+  
 ## How to Use This Module
 
 This repo has the following folder structure:
