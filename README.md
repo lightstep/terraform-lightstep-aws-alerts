@@ -17,7 +17,8 @@ Each AWS resource has an associated module that will create Lightstep alerts. Cu
 
 * __EC2__ (module: [`ec2-alerts`](https://github.com/lightstep/terraform-lightstep-aws-alerts/tree/master/modules/ec2-alerts))
 * __RDS__ (module: [`rds-alerts`](https://github.com/lightstep/terraform-lightstep-aws-alerts/tree/master/modules/rds-alerts))
-  
+* __ECS__ (module: [`ecs-alerts`](https://github.com/lightstep/terraform-lightstep-aws-alerts/tree/master/modules/ecs-alerts))
+
 ## How to Use This Module
 
 This repo has the following folder structure:
